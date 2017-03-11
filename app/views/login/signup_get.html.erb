@@ -1,0 +1,9 @@
+<h4>Register Here</h4>
+<div class="signup">
+<%= form_tag '/signup' do %>
+<%= text_field_tag :name, @name,  :size =>"20x2",:placeholder => 'Enter Name'%><br><br>
+<%= text_field_tag :email, @email,  :size =>"20x2", :placeholder => 'Enter Email'%><br><br>
+<%= password_field_tag :password, @password,  :size =>"20x2", :placeholder => 'Enter Password'%><br><br>
+<%= submit_tag "signup"%>
+<%end%>
+</div>

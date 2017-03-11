@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flipcart</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+<div class="top">
+	<nav>
+		<ul>
+			<li ><a href="/sell">Sell on Flipcart</a></li>
+			<li><a href="#">Advertise</a></li>
+			<li><a href="#">Gift Card</a></li>
+			<li><a href="#">Download App</a></li>
+			<li><a href="#">24*7</a></li>
+			<%if logged_in?%>
+			    <li><%= current_user.name%><li>
+				<%else%>
+				<li ><a href="/signin">Login</a></li>
+			   <li ><a href="/signup">signup</a></li>
+			<%end%>
+			
+
+
+		</ul>
+	</nav>
+</div>
+<div class="bottom">
+    <div class="home">
+	    <a href="/">Flipcart</a>
+	     <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+    </div>
+    <div class="search">
+	     <%= text_field_tag :content, @content, :size =>"100x2", :placeholder => 'Search For Products, Brands Or More'%>
+	     <a href='/search'><i class="fa fa-search" aria-hidden="true"></i></a>
+    </div>
+    <div class="cart">
+    	<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"> Cart</i></a>
+    </div>
+</div>
+</header>
+<%= yield %>
+
+</body>
+</html>

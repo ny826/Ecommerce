@@ -1,0 +1,11 @@
+
+<h4>Add Your Product Here</h4>
+<div class="sell"> 
+<%= form_tag '/sell' do %>
+
+<%= text_field_tag :product,@product,:size =>"20x2", :placeholder => 'Enter product'%><br><br>
+<%= text_area_tag :description,@description,:size =>"20x2", :placeholder => 'Give product description'%><br><br>
+<%= text_field_tag :amount,@amount,:size =>"20x2", :placeholder => 'Enter Amount'%><br><br>
+<%= submit_tag "submit"%>
+<%end%>
+</div>

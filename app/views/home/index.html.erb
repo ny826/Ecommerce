@@ -1,0 +1,14 @@
+<h3>Product List</h3>
+<div class="products">
+<% if @product%>
+
+  <% @product.each do |product|%>
+  <h3>About Product :</h3>
+  <%= product.product%>
+  <h3>Description :</h3>
+  <%= product.description%>
+  <h3>Amount to pay :</h3>
+  <%= product.amount%>
+  <%end%>
+<%end%>
+</div>

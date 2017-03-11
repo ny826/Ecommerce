@@ -1,0 +1,86 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ */
+
+
+*{
+	margin: 0;
+	padding:0;
+}
+
+ body > header{
+ 	background-color: blue;
+ 	height: 60px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	position: fixed;
+ 	width: 100%;
+ }
+
+body > header > div.top {
+	margin-left:640px;
+
+}
+
+ body > header > div.top > nav > ul {
+ 	display: flex;
+ 	align-items: center;
+ }
+
+ body > header > div.top > nav > ul > li{
+ 	list-style-type: none;
+    margin-left: 9px;
+    font-size: 12px;
+ }
+ body > header > div.top > nav > ul > li a{
+ 	color: white;
+ 	text-decoration: none;
+}
+
+body > header > div.bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 12px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+body > header > div.bottom > div.home{
+font-size: 20px;
+margin-left: 0px;
+}
+body > header > div.bottom > div a {
+text-decoration: none;
+color: white;
+
+}
+body > header > div.bottom > div.search > a {
+	padding-left: 10px;
+	padding-right:0px;
+    border: 1px solid white;
+    background-color: yellow;
+}
+body > header > div.bottom > div.search > a > i {
+	font-size: 16px;
+	color: black;
+}
+
+body > header > div.bottom > div.cart {
+border: 1px solid white;
+padding-left: 10px;
+padding-right: 10px;
+
+}
