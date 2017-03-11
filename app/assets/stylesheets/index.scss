@@ -2,15 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h3{
-	padding-top:70px;
-}
-.products{
-	padding:0px 10px 0px 10px;
-	border:1px solid black;
-	overflow:auto;
-	width:300px;
-	height:300px;
+div.product{
+    padding:8px;
+	display:flex;
+	justify-content:space-between;
+	height:auto;
+	margin:10px 4px 0px 192px;
+	box-sizing:border-box;
+	background-color:skyblue;
 }
 
+div.product > div.left img{
+	height:200px;
+}
+
+div.product > div.right {
+	padding:10px;
+}
 

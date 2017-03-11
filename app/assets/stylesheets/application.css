@@ -84,3 +84,8 @@ padding-left: 10px;
 padding-right: 10px;
 
 }
+
+body > main{
+	margin-top: 0px;
+	padding-top: 70px;
+}
